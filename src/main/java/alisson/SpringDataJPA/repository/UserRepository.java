@@ -15,6 +15,7 @@ public interface UserRepository extends JpaRepository<User, Integer> {
 
     //JPQL Query Method
     List<User> findByUserName(String userName);
+    List<User> findAll();
 
     //Query Override
     @Query("SELECT u FROM User u WHERE u.name LIKE %:name%")

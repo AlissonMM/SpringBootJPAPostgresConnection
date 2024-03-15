@@ -17,8 +17,9 @@ public class StartApp implements CommandLineRunner {
     public void run(String... args) throws Exception {
 //        List<User> users = repository.filtrarPorNome("Test");
 //        List<User> users = repository.findByUserName("testerson");
-        List<User> users = repository.findByNameContaining("Alisson");
+//        List<User> users = repository.findByNameContaining("Alisson");
 
+        List<User> users = repository.findAll();
 
         users.forEach(System.out::println);
     }
